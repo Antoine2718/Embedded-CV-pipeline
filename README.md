@@ -9,7 +9,7 @@ A lightweight, modular PyTorch pipeline designed for image classification and se
 pip install -r requirements.txt
 ```
 ## Quick start : a step by step execution
-### 1. Train thé model :
+### 1. Train the model :
 ``` bash
 python train.py
 ````
