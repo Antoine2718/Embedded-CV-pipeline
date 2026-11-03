@@ -1,0 +1,23 @@
+project:
+  name: "Embedded-CV-Pipeline"
+  seed: 42
+  device: "cuda"  
+
+data:
+  img_size: 224
+  batch_size: 4
+  num_workers: 0  
+
+model:
+  backbone_name: "resnet34"
+  pretrained: true
+  task: "classification"
+  n_classes: 2
+
+training:
+  epochs: 3
+  lr: 0.0002
+  weight_decay: 0.0001
+  focal_gamma: 2.0
+  max_grad_norm: 1.0
+  checkpoint_dir: "./checkpoints"
